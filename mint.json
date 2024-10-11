@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Franz",
+  "name": "Starter Kit",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,12 +18,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@usefranz.eu"
+      "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.usefranz.eu"
+    "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
     {
@@ -35,12 +35,23 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://docs.usefranz.eu"
+      "url": "https://mintlify.com/docs"
     },
     {
-      "name": "GitHub",
-      "icon": "github",
-      "url": "https://github.com/usefranz"
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://mintlify.com/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://mintlify.com/blog"
+    },
+    {
+      "name": "API Reference",
+      "openapi": "https://invoice.usefranz.eu/openapi.json",
+      "url": "api-reference",
+      "icon": "square-terminal"
     }
   ],
   "navigation": [
@@ -49,26 +60,38 @@
       "pages": [
         "introduction",
         "quickstart",
-        "authentication"
+        "development"
       ]
     },
     {
-      "group": "API Reference",
+      "group": "Essentials",
       "pages": [
-        "api-reference/introduction",
-        "api-reference/invoice-extraction"
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/reusable-snippets"
+      ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": [
+        "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/usefranz",
-    "github": "https://github.com/usefranz",
-    "linkedin": "https://linkedin.com/company/usefranz"
-  },
-  "api": {
-    "baseUrl": "https://invoice.usefranz.eu",
-    "auth": {
-      "method": "bearer"
-    }
+    "x": "https://x.com/mintlify",
+    "github": "https://github.com/mintlify",
+    "linkedin": "https://linkedin.com/company/mintlify"
   }
 }
